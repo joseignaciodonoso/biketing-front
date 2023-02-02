@@ -1,0 +1,46 @@
+include ../includes/mixins
+include ../includes/articles
+- RAND = Math.floor(Math.random()*100000);
+doctype html
+html(lang='es')
+	head
+		title Biketing
+		meta(charset="UTF-8")
+		link(href='img/favicon.png', rel='shortcut icon')
+		link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0")
+		meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+		link(href='css/main.css?v='+RAND, rel='stylesheet', type='text/css')
+		script(src='js/main.js?v='+RAND, type='text/javascript')
+
+		// Meta tags facebook
+		meta(property='og:title', content="#")
+		meta(property='og:description', content="#")
+		meta(property='og:image', content="#")
+
+		// Meta tags twitter cards
+		meta(name='twitter:card', content="summary_large_image")
+		meta(name='twitter:title', content="#")
+		meta(name='twitter:description', content="#")
+		meta(name='twitter:image', content="#")
+		link(href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,400;0,700;1,400;1,700;1,800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet")
+		//[if lt IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]
+
+
+	body
+		include ../includes/header
+		#sections
+			block page
+		.bubbles 
+			.bubbles__box 
+				.bubbles__bubble.bubbles__bubble--blue
+				.bubbles__bubble.bubbles__bubble--green
+			.bubbles__box
+				.bubbles__bubble.bubbles__bubble--green
+				.bubbles__bubble.bubbles__bubble--blue
+			.bubbles__box 
+				.bubbles__bubble.bubbles__bubble--blue
+				.bubbles__bubble.bubbles__bubble--green
+			.bubbles__box 
+				.bubbles__bubble.bubbles__bubble--green
+				.bubbles__bubble.bubbles__bubble--blue
+		include ../includes/footer

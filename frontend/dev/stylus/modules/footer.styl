@@ -1,0 +1,87 @@
+footer
+	color rgba(6, 44, 48, 0.8)
+	text-align center
+	position relative
+	background-color rgba(255, 255, 255, 0.4)
+	font-family $font2
+	@media $break-sm
+		text-align left
+		text-align center
+	.footer__wrap
+		padding 50px 20px 50px
+		margin: 50px 0px 0px
+		@media $break-md
+			padding 50px 133px 20px
+			margin 0 auto
+			max-width: 1400px
+		.footer__body
+			background-color:  white
+			border-radius: 20px 20px 0px 0px
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: space-between
+			flex-wrap: wrap
+			@media $break-md
+				flex-direction: row
+			.footer__info
+				padding: 25px
+				width: 100%
+				.footer__logo
+					text-align: center
+					padding-bottom: 25px
+					flex-shrink: 0
+					img	
+						margin: 0 auto
+				.footer__description
+					text-align: center
+				@media $break-md
+					width: 50%
+					.footer__logo
+						text-align: left
+						img	
+							margin-left: -5px
+					.footer__description
+						text-align: left
+						color rgba(6, 44, 48, 0.8)
+			.footer__social
+				flex-shrink: 0
+				flex-wrap: wrap
+				width 50%
+				display: flex
+				justify-content: center
+				align-items center
+				padding: 25px
+				gap 40px
+				@media $break-md
+					justify-content: right
+				.btn
+					background-color: white
+					color $dark
+					border: 1px solid rgba(234, 234, 234, 0.434)
+				.footer__icons
+					display: flex
+					flex-direction: column
+					ul	
+						display: flex
+						justify-content: space-between
+						padding-bottom: 2px
+						span 
+							color $dark
+							padding 2px
+							border: 1px solid rgba(234, 234, 234, 0.434)
+							width: 20px
+							height: 20px
+							border-radius: 2px
+		.footer__footer
+			background-color: white
+			border-radius: 0px 0px 20px 20px
+			display: flex
+			justify-content: center
+			text-align: center
+			.footer__description
+				padding 20px 0px
+				border-top: 1px solid #F1F1F1
+				width: 95%
+				margin: 0px
+				

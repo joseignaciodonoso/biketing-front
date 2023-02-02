@@ -1,0 +1,21 @@
+.bubbles
+    position: absolute
+    top 0px
+    left 0
+    width 100%
+    height: 100%
+    z-index 0
+    .bubbles__box
+        display: flex
+        justify-content: space-between
+        align-items: center
+        height: 1035px
+        .bubbles__bubble
+            opacity: 0.4;
+            filter: blur(100px);
+            &.bubbles__bubble--blue
+                background: $color_secondary
+                circle(500px)
+            &.bubbles__bubble--green
+                background-color: $color_primary
+                circle(700px)

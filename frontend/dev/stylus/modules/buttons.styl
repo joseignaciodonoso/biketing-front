@@ -1,0 +1,56 @@
+
+.btn
+	font-weight 500
+	display inline-block
+	padding 10px 25px
+	font-size $global-size-sm
+	transition .2s
+	border-radius 5px
+	background-color $color_primary 
+	color white
+	font-weight bold
+	font-family $font2
+	
+	&:hover
+		background-color white
+		color $color_primary
+		border: 1px solid $color_primary
+	
+	&.btn--transparent
+		background-color: #e99090d6;
+		color: #fff;
+		margin-right: 20px;
+		padding: 10px;
+	
+	&.btn--link
+		color $color_primary
+		background-color transparent
+		font-weight 400
+		text-transform uppercase
+		font-weight bold
+
+	&.btn--link-xs
+		color $gray
+		opacity .6
+		background-color transparent
+		font-weight 400
+		text-transform uppercase
+		font-weight bold
+		font-size 10px
+		line-height 12px
+		padding 5px
+
+	&.btn--plan
+		width: 90%
+		padding: 15px 50px
+		font-size: 15px
+	&.btn--header
+		background-color: white
+		color $dark
+		border: 1px solid rgba(234, 234, 234, 0.434)
+		border-radius: 5px
+		padding 6px 25px
+		&:hover
+			color white
+			background-color: $dark
+
